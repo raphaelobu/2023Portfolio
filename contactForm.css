@@ -1,0 +1,144 @@
+/*Services specific content*/
+div.contactInfo{
+  padding-top: 5vh;
+}
+
+div.contactPoints{
+  padding-top: 0;
+  height: 35vh;
+}
+
+div.phoneAvailability{
+  padding-top: 27px;
+  text-align: center;
+}
+
+div.left30Contact{
+  width:28%;
+  float:left;
+}
+
+div.right70Contact{
+  width:67%;
+  margin-left: 3%;
+  float:right;
+  height: auto;
+}
+
+
+
+
+
+
+div.contactFormBoxOuter{
+  padding: 0% 5% 5% 5%;
+}
+
+div.contactFormBoxInner{
+  color: #333;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 34px;
+}
+
+div.contactFormHalf{
+  width: 50%;
+
+}
+
+input{
+  width: 80%;
+}
+
+select{
+  width: 90%;
+}
+
+input,select{
+  padding: 0 10px;
+  height: 34px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  -moz-outline-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+
+textarea{
+  padding-top: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  height:160px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  -moz-outline-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+  
+  input:focus,select:focus,textarea:focus {
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0;
+  }
+
+  input:not(:placeholder-shown), textarea:not(:placeholder-shown){
+    border-color: #7de2b3;
+    outline-color: #dcfced;
+    outline-offset: 0;
+  }
+
+  select[data-chosen ='requestCallback'] {border-color: #7de2b3;outline-color: #dcfced; outline-offset: 0;}
+  select[data-chosen='scheduleService'] {border-color: #7de2b3;outline-color: #dcfced; outline-offset: 0;}
+
+  select[data-chosen ='standardMovers'] {border-color: #7de2b3;outline-color: #dcfced; outline-offset: 0;}
+  select[data-chosen='handyMan'] {border-color: #7de2b3;outline-color: #dcfced; outline-offset: 0;}
+  select[data-chosen='pureLabor'] {border-color: #7de2b3;outline-color: #dcfced; outline-offset: 0;}
+  select[data-chosen='lastMinuteMovers'] {border-color: #7de2b3;outline-color: #dcfced; outline-offset: 0;}
+  
+
+  div.firstNameField,div.emailField{
+    float: left;
+  }
+
+  div.lastNameField,div.phoneNumberField{
+    float: right;
+  }
+
+  div.submitField{
+    text-align: center;
+  }
+
+  div.queryField{
+    width: 93.5%;
+    float: left;
+  }
+  
+  input.submit{
+    margin-top: 24px;
+    text-align: center; 
+    padding: 0 10px;
+    height: 34px;
+    color: #404040;
+    background: white;
+    border: 1px solid;
+    border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+    border-radius: 2px;
+    outline: 5px solid #eff4f7;
+    -moz-outline-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+
+  input.submit:hover{
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0;
+    cursor: pointer;
+  }

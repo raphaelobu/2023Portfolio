@@ -1,0 +1,470 @@
+body {
+  font-family: sans-serif;
+  font-size: 24px;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+/*General Layout*/
+div.twoSides{
+  margin-left: 0px;
+  margin-top: -40vh;
+  display: flex;
+}
+
+div.left50{
+  padding-left: 220px;
+  margin: auto;
+  width:100%;
+  height: 100%;
+}
+
+div.right50{
+  margin: auto;
+  width:100%;
+  height: 100%;
+  float:right;
+}
+
+
+
+/*General Styling classes*/
+  .boxShadowIt{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.textColorWhite{
+color: white;
+}
+  
+.textColorDodgerBlue{
+color: dodgerblue;
+}
+  
+.textColorDarkGrey{
+color: #333;
+}
+
+h1{
+  font-size: 36px;
+  line-height: 40px;
+  }
+
+h2{
+  font-size: 26px;
+  line-height: 26px;
+  }
+
+h3{
+  font-size: 20px;
+  line-height: 20px;
+  }
+  
+
+p{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p.halfBr{
+  line-height: 10px;
+}
+
+div.clickMe{
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* Fixed sidenav, full height */
+.sideNav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  top: 0;
+  left:0;
+  width: 220px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  padding: 40px;
+  
+}
+
+/* Coin flip styling */
+.flipField {
+  width: 200px;
+  height: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.flipField:hover .flipCoin {
+  transform: rotateY(180deg);
+}
+.flipField .flipCoin {
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  height: 100%;
+  width: 100%;
+}
+.flipField .flipCoin .front, .flipField .flipCoin .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.flipField .flipCoin .front {
+  transform: translateZ(1px);
+}
+.flipField .flipCoin .back {
+  transform: rotateY(180deg);
+}
+.flipField .flipCoin .thumbnail {
+  width: 100%;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sideNav a, .dropdownBtn {
+  padding-left: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sideNav a:hover, .dropdownBtn:hover {
+  color: dodgerblue;
+}
+
+Add an active class to the active dropdown button
+.active {
+  background-color: white;
+  color: #333;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdownContainer {
+  display: none;
+  background-color: white;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sideNav {padding-top: 15px;}
+  .sideNav a {font-size: 18px;}
+}
+
+/* Logo  */
+a.companyName {
+  width: 100%;
+  display: block;
+  color: dodgerblue;
+  font-size: 40px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font: 500 70px/1.3 'Lobster';
+  text-shadow: 1.5px 1.5px 0px #333, 6px 6px 0px rgba(0,0,0,0.15);
+  }
+
+a.sideNavBtn.active {
+color: dodgerblue;
+}
+
+div.socialNav{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a.socialBtn{
+  color:white;
+  background-color: #333;
+  text-decoration:none;
+  border:0;
+  width:30px;
+  height:30px;
+  padding:2px;
+  margin:3px;
+  border-radius:15%;
+}
+
+a.socialBtn:hover{
+  color:white;
+  background-color: dodgerblue;
+}
+
+/* Fixed SocialsBar on left */
+.socialsBarLeft {
+  margin: 0;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow: hidden;
+  background-color: white;
+  bottom: 0;
+  left:0;
+  width: 220px;
+  height: 5%;
+  position: fixed;
+  z-index: 1;
+}
+
+
+/*Main Content*/
+header.homeHeader{
+  margin: 0;
+  padding:0;
+  margin-left: 300px; 
+  overflow:hidden;
+  position: relative;
+  height: 80vh;
+}
+
+header.homeHeader::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width:100%;
+  transform: skewY(-30deg);
+  background: aliceblue;
+  transform-origin: bottom left;
+  z-index: -1;
+}
+
+img.homeImg{
+  padding: 0;
+  margin:0;
+  margin-top: -50px;
+  width: 300px;
+  float: right;
+  margin-right:15%;
+}
+
+div.welcomeTextBox{
+  z-index: 0;
+  padding-bottom: 20px;
+}
+
+/*Bounce on hover down arrow*/
+div.scrollArrow {
+font-size: 16px;
+margin-left: 300px; 
+text-align: center;
+padding-top:5%;
+padding-bottom:5%;
+}
+
+a.scrollCaret {
+float:center;
+color: #333; 
+text-decoration: none;
+}
+
+.bounce {
+-moz-animation: bounce 2s infinite;
+-webkit-animation: bounce 2s infinite;
+animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+  transform: translateY(0);
+}
+40% {
+  transform: translateY(-30px);
+}
+60% {
+  transform: translateY(-15px);
+}
+}
+
+/* Main content */
+div.main {
+  margin-left: 300px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  max-width: 1176px;
+}
+
+div.aboutSection{
+  padding-top: 5%;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+div.fieldSection{
+  padding-top: 5%;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+div.experienceSection{
+  padding-top: 5%;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+div.contactSection{
+  padding-top: 5%;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+div.endMain{
+  padding-top: 7%;
+}
+
+/* Author Tag */
+div.authorTag{
+  height: 80px;
+  display: inline-flex;
+  padding-bottom: 50px;
+}
+
+div.outerCircle{
+  width:80px;
+  height:80px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: relative;
+}
+
+div.innerCircle{
+  width:70px;
+  height:70px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  overflow: hidden;
+}
+
+img.authorImg{
+  width:72px;
+  height:72px;
+}
+
+div.rightAuthorText{
+  padding-left: 30px;
+  position: relative;
+  width:400px;
+}
+
+
+/*Fields of focus*/
+div.fieldOfFocus{
+width: 100%;
+height:480px;
+}
+
+ul.fieldsNavBar {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: white;
+top: 0;
+width: 100%;
+
+}
+
+li.fieldsNavBtn {
+float:left;
+padding-left: 4%; 
+padding-right: 4%;
+}
+@media only screen and (max-width: 1464px) {
+  li.fieldsNavBtn {
+      width:40%; 
+      padding-left: 5%; 
+      padding-right: 5%;
+      }
+  }
+
+a.fieldsNavBtnLink {
+display: block;
+color: #333;
+text-align: center;
+padding: 10px 10px;
+text-decoration: none;
+}
+
+a.fieldsNavBtnLink:hover {
+color: dodgerblue;
+}
+
+a.fieldsNavBtnLink.active {
+color: dodgerblue;
+}
+
+
+.noise {
+  position: fixed;
+  z-index: 9999;
+  top: -300%;
+  left: -150%;
+  height: 600%;
+  width: 600%;
+  -webkit-animation: grain 7s steps(10) infinite;
+  animation: grain 7s steps(10) infinite;
+  background-image: url(./images/noise.png);
+  background-size: 300px;
+  background-repeat: repeat;
+  opacity: .09;
+  pointer-events: none;
+}
+
+@keyframes grain{ 
+  
+  0%, 100% {
+    transform: translate(0);
+  }
+
+  10% {
+    transform: translate(-5%,-10%);
+  }
+  20% {
+    transform: translate(-15%,5%);
+  }
+  30% {
+    transform: translate(7%,-25%);
+  }
+  40% {
+    transform: translate(-5%,25%);
+  }
+  50% {
+    transform: translate(-15%,10%);
+  }
+  60% {
+    transform: translate(15%);
+  }
+  70% {
+    transform: translateY(15%);
+  }
+  80% {
+    transform: translate(3%,35%);
+  }
+  90% {
+    transform: translate(-10%,10%);
+  }
+
+
+}

@@ -1,0 +1,112 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #333;
+}
+ul li{
+    list-style: none;
+    background: white;
+    padding: 12px 20px;
+    margin: 6px;
+    cursor: pointer;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+}
+
+li.list.mechanical.active{
+    background:#3b86d1;
+    color: white;
+}
+
+li.list.software.active{
+    background:#d13e4f;
+    color: white;
+}
+
+li.list.robotics.active{
+    background:#563560;
+    color: white;
+}
+
+li.list.general.active{
+    background:#bfb5b2;
+    color: white;
+}
+
+.gridItem.hide{
+    display: none;
+}
+
+.projectContainer {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 4%;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: repeat(5, 240px);
+  }
+
+
+div.marginOuter{
+    height: 210px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    background: white;
+}
+
+div.marginInner{
+    height: 210px;
+    padding: 15px;
+    background: white;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+}
+
+div.contentArea{
+    height: 210px;
+    background: white;
+    text-align: center;
+    transition: all 0.4s ease-out;
+    overflow: hidden;
+}
+
+
+div.overlayText {
+    margin-top: -225px;
+    margin-left: 2%;
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+
+
+div.marginInner:hover .overlayText{
+    transition: 0.4s ease-in;
+    opacity: 0.8;
+  }
+
+
+div.marginInner:hover > div.contentArea {
+    opacity: 0.6;
+   filter: -webkit-filter: blur(2px); 
+    filter: blur(2px);
+    -moz-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+  
+
+
+
+
+
+
+
